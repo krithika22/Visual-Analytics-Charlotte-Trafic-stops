@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+	<title>Officer Experience Tree Map</title>
+	<link rel="stylesheet" type="text/css" href="styles/index.css" />
+	<link rel="stylesheet" type="text/css" href="styles/treemap.css" />
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 crossorigin="anonymous"></script>
+
+</head>
+
+<div class="topnav">
+	<a href="index.html" vertical-align="middle">Home</a>
+	<a href="proposal.html">Proposal</a>
+	<a href="presentation.html">Presentation</a>
+	<a href="map.html">Charlotte Map</a>
+	<a href="bargraphs.html">Bar Graphs</a>
+	<a href="treemap.html" class="active">Tree Map</a>
+</div>
+<div class="footer">By Akash Bhardwaj, Amparo Velasquez, Krithika Prabhakar</div>
+
+<body style="margin-top: 60px;">
+
+	<!-- create container element for visualization -->
+	<h1>Officer Race vs Officer Experience</h1>
+	<select id="select-key" class="three columns">
+		Please select a race:
+		<option value="ai">American Indian/Alaska Native</option>
+		<option value="api">Asian / Pacific Islander</option>
+		<option value="baa">Black/African American</option>
+		<option value="hl">Hispanic/Latin</option>
+		<option value="w">White</option>
+		<option value="total" selected="selected">Total</option>
+	</select>
+	<div id="contain">
+		<div id="viz"></div>
+		<script src="scripts/d3.v3.min.js" charset="utf-8"></script>
+		<script src="//d3plus.org/js/d3plus.js"></script>
+		<script src="scripts/treemap.js"></script>
+		<div id="instructions">
+				<h3>Instructions</h3>
+			Hover over sections to see the values of each block.
+		</div>
+	</div>
+
+</body>
+
+</html>

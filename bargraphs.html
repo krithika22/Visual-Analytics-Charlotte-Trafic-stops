@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- works for all -- BEST SO FAR -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bar Graphs of Stop Data</title>
+    <link rel="stylesheet" type="text/css" href="styles/index.css" />
+    <link rel="stylesheet" type="text/css" href="styles/bargraphs.css" />
+
+    <script>
+            function styleMyiFrame()
+            {   document.getElementById("load-graph").style.boxShadow = "0px 5px 5px #e4e4e4";
+                document.getElementById("load-graph").height = "393px";
+                document.getElementById("load-graph").width = "1200px";
+                document.getElementById("load-graph").width = "1200px";
+            }
+    </script>
+
+
+</head>
+<div class="topnav">
+    <a href="index.html" vertical-align="middle">Home</a>
+    <a href="proposal.html">Proposal</a>
+    <a href="presentation.html">Presentation</a>
+    <a href="map.html">Charlotte Map</a>
+    <a href="bargraphs.html" class="active">Bar Graphs</a>
+    <a href="treemap.html">Tree Map</a>
+</div>
+<div class="footer" id="bottom">By Akash Bhardwaj, Amparo Velasquez, Krithika Prabhakar</div>
+
+<body style="margin-top: 60px;">
+
+    <!--<p><b>       <object type="Total Number of Stops" data="StackStops.html"></object></b></p>
+<p><b><a class="two" href="StackStops.html" onclick="styleMyiFrame();" target="load-graph" id="my" target="_blank" ><button class="button button2"> Total Number of Stops</button></a></b></p>   -->
+    <p>
+        <b><a class="two" href="StackArrestsOE.html" onclick="styleMyiFrame();" target="load-graph" id="my" target="_blank"><button class="button button2">Arrests: Officer Years Of Service</button></a></b>
+        <b><a class="two" href="StackArrests.html" onclick="styleMyiFrame();" target="load-graph" id="my" target="_blank"><button class="button button2"> Driver's Race</button></a></b>
+        <b><a class="two" href="StackArrestsWO.html" onclick="styleMyiFrame();" target="load-graph" id="my" target="_blank"><button class="button button2">White Officer</button></a></b>
+        <b><a class="two" href="StackArrestsBO.html" onclick="styleMyiFrame();" target="load-graph" id="my" target="_blank"><button class="button button2">Black Officer</button></a></b>
+        <b><a class="two" href="StackArrestsO.html" onclick="styleMyiFrame();" target="load-graph" id="my" target="_blank"><button class="button button2">Other</button></a></b>
+    </p>
+    <iframe src="StackStops.html" allowTransparency="true" scrolling="no"  frameborder="0" width="1200px" height=393px> <p>Your browser does not support iframes.</p></iframe>
+
+    <iframe frameborder="0" id="load-graph" allowTransparency="true" scrolling="no"  frameborder="0" name="load-graph" scrolling="0"/>
+
+</body>
+
+
+</html>
+
+<a href="#Report">Jump to top</a>
+<br>
+<br>
+
+<td><a href="index.html" style="font-size:20px;"> Go back home </a></td>

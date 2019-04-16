@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="shortcut icon" href="">
+    <title>QCTS Home Page</title>
+    <link rel="stylesheet" type="text/css" href="styles/index.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <style>
+        #PDFView {
+                    width: 99%;
+                    height: 90%;
+                    margin-right: 10px;
+                    margin-bottom: 15px;
+                    position: fixed;
+                }
+            </style>
+
+</head>
+<div class="topnav">
+    <a href="index.html" vertical-align="middle">Home</a>
+    <a href="proposal.html">Proposal</a>
+    <a href="presentation.html" class="active">Presentation</a>
+    <a href="map.html">Charlotte Map</a>
+    <a href="bargraphs.html">Bar Graphs</a>
+    <a href="treemap.html">Tree Map</a>
+</div>
+
+<body style="margin-top: 60px;">
+    <object id="PDFView" data="data/Presentation.pdf" type="application/pdf">
+        <p>Alternative text - include a link <a href="data/Presentation.pdf">to the PDF!</a></p>
+    </object>
+</body>
+
+<div class="footer">By Akash Bhardwaj, Amparo Velasquez, Krithika Prabhakar</div>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="shortcut icon" href="">
+    <title>QCTS Home Page</title>
+    <link rel="stylesheet" type="text/css" href="styles/index.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <style>
+        #mapinfo,
+        #barPic,
+        #treeInfo {
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 45%;
+            float: left;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        #mapPic,
+        #barInfo
+        #treePic {
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 45%;
+            float: left;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .homeImage {
+            width: 50%;
+            height: 50%;
+        }
+
+        .secondImage {
+            width: 70%;
+            height: 70%;
+        }
+
+        .thirdImage {
+            width: 30%;
+            height: 30%;
+        }
+
+        #first,
+        #second {
+            display:inline-block;
+        }
+        p{
+            font-size: 19px;
+        }
+    </style>
+
+</head>
+<div class="topnav">
+    <a href="index.html" class="active" vertical-align="middle">Home</a>
+    <a href="proposal.html">Proposal</a>
+    <a href="presentation.html">Presentation</a>
+    <a href="map.html">Charlotte Map</a>
+    <a href="bargraphs.html">Bar Graphs</a>
+    <a href="treemap.html">Tree Map</a>
+</div>
+
+<body style="margin-top: 60px;">
+    <h2>Intro</h2>
+    <p>We are a team of three people - Akash, Amparo, Krithika working with the Charlotte Traffic stops database. There
+    has been a huge number of crimes and victimizations happening in several traffic stops due to improper driving. In
+    order to find an optimal way to deploy officers based on the level of incidents in an area, we have created a
+    couple of visualizations. While our main purpose is said, we also found several interesting insights from the data.
+    Some correlations between the parameters of the database were drawn and the trend was analyzed. We were able to
+    learn some relationships we did not see in the data before, which could be used to solve more problems than the one
+    addressed.</p>
+    <div id="first">
+        <div id="mapinfo">
+            <br><br><br>
+            <h1>Interactive Map</h1>
+        </div>
+        <div id="mapPic">
+            <img src="data/map.png" class="homeImage">
+        </div>
+    </div>
+    <div id="second">
+        <div id="barPic">
+            <img src="data/barGraph.png" class="secondImage">
+        </div>
+        <div id="barInfo">
+            <br><br><br>
+            <h1>Bar Graphs</h1>
+        </div>
+    </div>
+    <div id="third">
+            <div id="mapinfo">
+                <br><br><br>
+                <h1>Tree Map</h1>
+            </div>
+            <div id="mapPic">
+                <img src="data/treeMap.png" class="homeImage">
+            </div>
+        </div>
+</body>
+
+<div class="footer">By Akash Bhardwaj, Amparo Velasquez, Krithika Prabhakar</div>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <script>
+        window.onload = function () {
+
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                title:{
+                    text: "Arrests by Hispanic/Asian/Native American Officer",
+                    fontSize: 24,
+                    fontFamily: "tamoha",
+                    fontWeight: "bold"
+                },
+                axisX: {
+                    valueFormatString: "DDD",
+                    labelFontSize: 18
+                },
+                axisY: {
+                    prefix: "",
+                    labelFontSize: 16
+                },
+                toolTip: {
+                    shared: true
+                },
+                legend:{
+                    cursor: "pointer",
+                    itemclick: toggleDataSeries,
+                    horizontalAlign: "center",
+                    verticalAlign: "top",
+                    fontSize: 16,
+                    fontFamily: "tamoha",
+                },
+                data: [{
+                    type: "stackedBar",
+                    name: "White",   // Driver
+                    color: "LightSeaGreen",
+                    showInLegend: "true",
+                    xValueFormatString: "String",
+                    yValueFormatString: "#,##0",
+                    dataPoints: [
+                        { label: "Eastway", y: 19 },
+                        { label: "Freedom", y: 19 },
+                        { label: "Independence", y: 5 },
+                        { label: "North", y: 6 },
+                        { label: "Providence", y: 4 },
+                        { label: "South", y: 10 },
+                        { label: "SteeleCreek", y: 6 }
+                    ]
+                },
+                    {
+                        type: "stackedBar",
+                        name: "Black",
+                        color: "RoyalBlue",
+                        showInLegend: "true",
+                        xValueFormatString: "String",
+                        yValueFormatString: "#,##0",
+                        dataPoints: [
+                            { label: "Eastway", y:  18},
+                            { label: "Freedom", y: 24 },
+                            { label: "Independence", y: 19 },
+                            { label: "North", y: 15 },
+                            { label: "Providence", y: 4 },
+                            { label: "South", y: 2 },
+                            { label: "SteeleCreek", y: 10 }
+                        ]
+                    },
+                    {
+                        type: "stackedBar",
+                        name: "Asian",
+                        showInLegend: "true",
+                        xValueFormatString: "String",
+                        yValueFormatString: "#,##0",
+                        dataPoints: [
+                            { label: "Eastway", y: 2 },
+                            { label: "Freedom", y: 2 },
+                            { label: "Independence", y: 0 },
+                            { label: "North", y: 0 },
+                            { label: "Providence", y: 0 },
+                            { label: "South", y: 0 },
+                            { label: "SteeleCreek", y: 0 }
+                        ]
+                    },
+                    {
+                        type: "stackedBar",
+                        name: "Native American",
+                        color: "Coral",
+                        showInLegend: "true",
+                        xValueFormatString: "String",
+                        yValueFormatString: "#,##0",
+                        dataPoints: [
+                            { label: "Eastway", y: 0 },
+                            { label: "Freedom", y: 0 },
+                            { label: "Independence", y: 0 },
+                            { label: "North", y: 0 },
+                            { label: "Providence", y: 0 },
+                            { label: "South", y: 0 },
+                            { label: "SteeleCreek", y: 0 }
+                        ]
+                    },
+                    {
+                        type: "stackedBar",
+                        name: "Other",
+                        showInLegend: "true",
+                        xValueFormatString: "String",
+                        yValueFormatString: "#,##0",
+                        dataPoints: [
+                            { label: "Eastway", y: 1 },
+                            { label: "Freedom", y: 2 },
+                            { label: "Independence", y: 0 },
+                            { label: "North", y: 0 },
+                            { label: "Providence", y: 0 },
+                            { label: "South", y: 0 },
+                            { label: "SteeleCreek", y: 0 }
+                        ]
+                    }]
+            });
+            chart.render();
+
+            function toggleDataSeries(e) {
+                if(typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+                    e.dataSeries.visible = false;
+                }
+                else {
+                    e.dataSeries.visible = true;
+                }
+                chart.render();
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="chartContainer" style="height: 395px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<!-- <script src="//d3js.org/d3.v4.min.js"></script>   -->
+</body>
+</html>

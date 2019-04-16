@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <script>
+        window.onload = function () {
+
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                title:{
+                    text: "Officers' Years of Service",
+                    fontSize: 24,
+                    fontFamily: "tamoha",
+                    fontWeight: "bold"
+                },
+                axisX: {
+                    valueFormatString: "DDD",
+                    labelFontSize: 18
+                },
+                axisY: {
+                    prefix: "",
+                    labelFontSize: 16
+                },
+                toolTip: {
+                    shared: true
+                },
+                legend:{
+                    cursor: "pointer",
+                    itemclick: toggleDataSeries,
+                    horizontalAlign: "center",
+                    verticalAlign: "top",
+                    fontSize: 16,
+                    fontFamily: "tamoha",
+                },
+                data: [{
+                    type: "stackedBar",
+                    name: "1-3",   // Driver
+                    color: "LightSeaGreen",
+                    showInLegend: "true",
+                    xValueFormatString: "String",
+                    yValueFormatString: "#,##0",
+                    dataPoints: [
+                        { label: "Eastway", y:83  },
+                        { label: "Freedom", y: 163 },
+                        { label: "Independence", y: 73 },
+                        { label: "North", y: 112 },
+                        { label: "Providence", y: 22 },
+                        { label: "South", y: 15 },
+                        { label: "SteeleCreek", y: 49 }
+                    ]
+                },
+                    {
+                        type: "stackedBar",
+                        name: "4-6",
+                        color: "RoyalBlue",
+                        showInLegend: "true",
+                        xValueFormatString: "String",
+                        yValueFormatString: "#,##0",
+                        dataPoints: [
+                            { label: "Eastway", y:  46},
+                            { label: "Freedom", y: 181 },
+                            { label: "Independence", y: 99 },
+                            { label: "North", y: 73 },
+                            { label: "Providence", y: 32 },
+                            { label: "South", y: 6 },
+                            { label: "SteeleCreek", y: 40 }
+                        ]
+                    },
+                    {
+                        type: "stackedBar",
+                        name: "7-10",
+                        showInLegend: "true",
+                        xValueFormatString: "String",
+                        yValueFormatString: "#,##0",
+                        dataPoints: [
+                            { label: "Eastway", y: 44 },
+                            { label: "Freedom", y: 99 },
+                            { label: "Independence", y: 77 },
+                            { label: "North", y: 57 },
+                            { label: "Providence", y: 15 },
+                            { label: "South", y: 14 },
+                            { label: "SteeleCreek", y: 49 }
+                        ]
+                    },
+                    {
+                        type: "stackedBar",
+                        name: "11-15",
+                        color: "Coral",
+                        showInLegend: "true",
+                        xValueFormatString: "String",
+                        yValueFormatString: "#,##0",
+                        dataPoints: [
+                            { label: "Eastway", y: 28 },
+                            { label: "Freedom", y: 50 },
+                            { label: "Independence", y: 17 },
+                            { label: "North", y: 37 },
+                            { label: "Providence", y: 3 },
+                            { label: "South", y: 12 },
+                            { label: "SteeleCreek", y: 38 }
+                        ]
+                    },
+                    {
+                        type: "stackedBar",
+                        name: "16+",
+                        showInLegend: "true",
+                        xValueFormatString: "String",
+                        yValueFormatString: "#,##0",
+                        dataPoints: [
+                            { label: "Eastway", y: 36 },
+                            { label: "Freedom", y: 81 },
+                            { label: "Independence", y: 36 },
+                            { label: "North", y: 24 },
+                            { label: "Providence", y: 21 },
+                            { label: "South", y: 19 },
+                            { label: "SteeleCreek", y: 28 }
+                        ]
+                    }]
+            });
+            chart.render();
+
+            function toggleDataSeries(e) {
+                if(typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+                    e.dataSeries.visible = false;
+                }
+                else {
+                    e.dataSeries.visible = true;
+                }
+                chart.render();
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="chartContainer" style="height: 395px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<!-- <script src="//d3js.org/d3.v4.min.js"></script>   -->
+</body>
+</html>
