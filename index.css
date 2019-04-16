@@ -1,0 +1,81 @@
+/*custom font*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+/*basic reset*/
+
+body {
+	font-family: "Myriad Pro", sans-serif;
+	background: silver;
+}
+
+h1 {
+	text-align: center;
+	font-weight: lighter;
+}
+
+h2 {
+	text-align: center;
+	font-weight: lighter;
+}
+
+h3 {
+	font-size: 1.5em;
+	margin-top: 0.83em;
+	margin-bottom: 0.83em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: lighter;
+	vertical-align: top;
+}
+
+p {
+	color: black;
+}
+
+.topnav {
+	font-family: "Myriad Pro", sans-serif;
+	top: 0px;
+	left: 0px;
+	padding-top: 0px;
+	padding-left: 10px;
+	background-color: #333333;
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	line-height: 50px;
+}
+
+.topnav a {
+	height: 50px;
+	float: left;
+	display: block;
+	padding: 0px 20px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.topnav a:hover, a.active:hover {
+	height: 50px;
+	color: black;
+}
+
+.topnav a.active {
+	height: 50px;
+	background-color: #333;
+	color: lightblue;
+}
+
+.footer {
+	font-family: "Myriad Pro", sans-serif;
+	font-size: 20px;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 3%;
+	line-height: initial;
+	background-color: #333;
+	color: white;
+	text-align: center;
+}

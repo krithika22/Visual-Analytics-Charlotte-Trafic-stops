@@ -1,0 +1,131 @@
+.main-content {
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 12px;
+}
+
+#map {
+	width: 900px;
+	height: 600px;
+	float: left;
+	border: 1px solid silver;
+	background: #E6E6E6;
+	box-sizing: border-box;
+}
+
+#selections {
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 725px;
+	height: 600px;
+	float: left;
+	box-sizing: border-box;
+	color: white;
+	background-color: rgb(30, 30, 30);
+}
+
+ul {
+	list-style: none;
+	margin: 5px 20px;
+}
+
+li {
+	margin: 10px 0;
+}
+
+.YlGnBu .q0-12 {
+	fill: rgb(220, 236, 201)
+}
+
+.YlGnBu .q1-12 {
+	fill: rgb(179, 221, 204)
+}
+
+.YlGnBu .q2-12 {
+	fill: rgb(138, 205, 206)
+}
+
+.YlGnBu .q3-12 {
+	fill: rgb(98, 190, 210)
+}
+
+.YlGnBu .q4-12 {
+	fill: rgb(70, 170, 206)
+}
+
+.YlGnBu .q5-12 {
+	fill: rgb(61, 145, 190)
+}
+
+.YlGnBu .q6-12 {
+	fill: rgb(53, 119, 174)
+}
+
+.YlGnBu .q7-12 {
+	fill: rgb(45, 94, 158)
+}
+
+.YlGnBu .q8-12 {
+	fill: rgb(36, 68, 142)
+}
+
+.YlGnBu .q9-12 {
+	fill: rgb(28, 43, 127)
+}
+
+.YlGnBu .q10-12 {
+	fill: rgb(22, 32, 101)
+}
+
+.YlGnBu .q11-12 {
+	fill: rgb(17, 23, 75)
+}
+
+g.features {
+	stroke: #d8d8d8;
+	stroke-width: 0.5;
+}
+
+g.features path:hover {
+	opacity: 0.7;
+}
+
+.tooltip {
+	font-weight: bold;
+	padding: 0.5rem;
+	border: 1px solid silver;
+	color: #222;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 0px #a6a6a6;
+	opacity: 0.9;
+	position: absolute;
+  }
+
+.hidden {
+	display: none;
+}
+
+#details {
+	margin-top: 10px;
+	padding-left: 20px;
+}
+
+#legend {
+	border: 1px solid silver;
+	border-top: 0;
+  }
+  
+  .legend-key path {
+	display: none;
+  }
+  
+  .legend-key text {
+	font-size: 1rem;
+  }
+  
+  .legend-key line {
+	stroke: #000;
+	shape-rendering: crispEdges;
+  }
